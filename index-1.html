@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="fotologo.jpg" type="image/x-icon" />
+  <title>Tecnoflow - Gamer Zone</title>
+  <link rel="stylesheet" href="TecnoflowShopp.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="guilda.jpg" alt="Logo Tecnoflow" />
+      <h1>Tecnoshopp</h1>
+    </div>
+    <nav>
+      <a href="#todos">Todos</a>
+      <a href="#acessorios">Acessórios</a>
+      <a href="#hardware">Hardware</a>
+      <a href="#mobilia">Mobiliário</a>
+      <button id="carrinhoBtn">🛒 Carrinho</button>
+    </nav>
+  </header>
+
+  <section class="categorias-menu">
+    <nav>
+      <input type="text" id="barraPesquisa" placeholder="Pesquisar produtos..." />
+      <a href="#todos">Todos</a>
+      <a href="#acessorios">Acessórios</a>
+      <a href="#hardware">Hardware</a>
+      <a href="#mobilia">Mobiliário</a>
+    </nav>
+  </section>
+
+  <img src="dragon.avif" alt="Banner Tecnoflow" class="banner"/>
+
+  <section class="produtos" id="todos">
+    <!-- Produtos inseridos via HTML -->
+    
+    <!-- Acessórios -->
+    <div class="card" data-categoria="acessorios">
+      <img src="teclado.avif" alt="Teclado Mecânico RGB" />
+      <h3>Teclado Mecânico RGB</h3>
+      <span>R$ 349,90</span><br />
+      <button class="toggleDesc">Descrição</button>
+      <button class="comprar">Comprar Agora</button>
+      <div class="descricao-box">
+        Switches vermelhos, iluminação RGB completa, cabo trançado e estrutura em alumínio.
+      </div>
+    </div>
+
+    <div class="card" data-categoria="acessorios">
+      <img src="mouse.avif" alt="Mouse Redfire 16000 DPI" />
+      <h3>Mouse Redfire 16000 DPI</h3>
+      <span>R$ 249,90</span><br />
+      <button class="toggleDesc">Descrição</button>
+      <button class="comprar">Comprar Agora</button>
+      <div class="descricao-box">
+        Sensor óptico ultra preciso, 7 botões programáveis e iluminação RGB dinâmica.
+      </div>
+    </div>
+
+    <div class="card" data-categoria="acessorios">
+      <img src="headset.avif" alt="Headset Inferno 7.1" />
+      <h3>Headset Inferno 7.1</h3>
+      <span>R$ 499,90</span><br />
+      <button class="toggleDesc">Descrição</button>
+      <button class="comprar">Comprar Agora</button>
+      <div class="descricao-box">
+        Som surround imersivo 7.1, microfone removível e almofadas de couro sintético.
+      </div>
+    </div>
+
+    <div class="card" data-categoria="acessorios">
+      <img src="mousepad.avif" alt="Mousepad Gamer" />
+      <h3>Mousepad Gamer Speed</h3>
+      <span>R$ 79,90</span><br />
+      <button class="toggleDesc">Descrição</button>
+      <button class="comprar">Comprar Agora</button>
+      <div class="descricao-box">
+        Superfície lisa, base antiderrapante e costura reforçada para durabilidade.
+      </div>
+    </div>
+
+    <div class="card" data-categoria="acessorios">
+      <img src="webcam.avif" alt="Webcam HD" />
+      <h3>Webcam HD 1080p</h3>
+      <span>R$ 299,90</span><br />
+      <button class="toggleDesc">Descrição</button>
+      <button class="comprar">Comprar Agora</button>
+      <div class="descricao-box">
+        Resolução Full HD, microfone embutido e ajuste automático de luz.
+      </div>
+    </div>
+
+    <!-- Hardware -->
+    <div class="card" data-categoria="hardware">
+      <img src="monitor.avif" alt="Monitor Curvo 144Hz" />
+      <h3>Monitor Curvo 144Hz</h3>
+      <span>R$ 1999,90</span><br />
+      <button class="toggleDesc">Descrição</button>
+      <button class="comprar">Comprar Agora</button>
+      <div class="descricao-box">
+        Tela curva 27'', tempo de resposta 1ms, taxa de atualização 144Hz e FreeSync.
+      </div>
+    </div>
+
+    <div class="card" data-categoria="hardware">
+      <img src="placa_video.avif" alt="Placa de Vídeo RTX 3080" />
+      <h3>Placa de Vídeo RTX 3080</h3>
+      <span>R$ 7499,90</span><br />
+      <button class="toggleDesc">Descrição</button>
+      <button class="comprar">Comprar Agora</button>
+      <div class="descricao-box">
+        10GB GDDR6X, Ray Tracing, suporte a 4K e altas taxas de FPS.
+      </div>
+    </div>
+
+    <div class="card" data-categoria="hardware">
+      <img src="ssd.avif" alt="SSD 1TB NVMe" />
+      <h3>SSD 1TB NVMe</h3>
+      <span>R$ 899,90</span><br />
+      <button class="toggleDesc">Descrição</button>
+      <button class="comprar">Comprar Agora</button>
+      <div class="descricao-box">
+        Alta velocidade de leitura e gravação, ideal para jogos e produtividade.
+      </div>
+    </div>
+
+    <div class="card" data-categoria="hardware">
+      <img src="placamae.avif" alt="Placa Mãe Gaming" />
+      <h3>Placa Mãe Gaming X570</h3>
+      <span>R$ 1299,90</span><br />
+      <button class="toggleDesc">Descrição</button>
+      <button class="comprar">Comprar Agora</button>
+      <div class="descricao-box">
+        Suporte para Ryzen, RGB personalizável, M.2 duplo e USB 3.2.
+      </div>
+    </div>
+
+    <!-- Mobiliário -->
+    <div class="card" data-categoria="mobilia">
+      <img src="cadeira.avif" alt="Cadeira Ergonômica Gamer" />
+      <h3>Cadeira Ergonômica Gamer</h3>
+      <span>R$ 1299,90</span><br />
+      <button class="toggleDesc">Descrição</button>
+      <button class="comprar">Comprar Agora</button>
+      <div class="descricao-box">
+        Ajustável, com suporte lombar e design ergonômico para longas sessões de jogo.
+      </div>
+    </div>
+
+    <div class="card" data-categoria="mobilia">
+      <img src="mesa.avif" alt="Mesa Gamer" />
+      <h3>Mesa Gamer RGB</h3>
+      <span>R$ 999,90</span><br />
+      <button class="toggleDesc">Descrição</button>
+      <button class="comprar">Comprar Agora</button>
+      <div class="descricao-box">
+        Tampo resistente, suporte para copo, iluminação RGB e design moderno.
+      </div>
+    </div>
+
+    <div class="card" data-categoria="mobilia">
+      <img src="suporte_monitor.avif" alt="Suporte para Monitor" />
+      <h3>Suporte para Monitor Ajustável</h3>
+      <span>R$ 299,90</span><br />
+      <button class="toggleDesc">Descrição</button>
+      <button class="comprar">Comprar Agora</button>
+      <div class="descricao-box">
+        Ajuste de altura e inclinação, suporta monitores até 32''.
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Carrinho -->
+  <div class="carrinho" id="carrinho">
+    <button id="fecharCarrinho">&times;</button>
+    <h3>Carrinho de Compras</h3>
+    <div id="itensCarrinho">
+      <p>Carrinho vazio</p>
+    </div>
+    <button id="finalizar">Finalizar Compra</button>
+  </div>
+
+  <footer>
+    <p>2023 - Todos os direitos reservados © Tecnoflow</p>
+    <p>Desenvolvido por <a href="https://github.com/jhohanr2" target="_blank" rel="noopener noreferrer">Felipe Neves</a> e <a href="https://github.com/Kauan-d" target="_blank" rel="noopener noreferrer">Luis Feliphe</a></p>
+  </footer>
+
+  <script src="tec.js"></script>
+</body>
+</html>
