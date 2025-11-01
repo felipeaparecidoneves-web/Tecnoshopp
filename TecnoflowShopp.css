@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Poppins', sans-serif;
   background: #0a0a0a;
@@ -24,19 +25,23 @@ header {
   z-index: 1000;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 .logo {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .logo img {
   height: 50px;
 }
+
 .logo h1 {
   color: red;
-  font-size: 3rem; /* título maior */
+  font-size: 3rem;
   font-weight: bold;
 }
+
 nav a {
   color: #fff;
   margin: 0 15px;
@@ -44,9 +49,11 @@ nav a {
   transition: 0.3s;
   font-weight: 600;
 }
+
 nav a:hover {
   color: red;
 }
+
 nav button#carrinhoBtn {
   background: red;
   border: none;
@@ -57,6 +64,7 @@ nav button#carrinhoBtn {
   cursor: pointer;
   transition: background 0.3s;
 }
+
 nav button#carrinhoBtn:hover {
   background: #ff3333;
 }
@@ -64,7 +72,7 @@ nav button#carrinhoBtn:hover {
 /* Menu categorias sticky */
 .categorias-menu {
   position: sticky;
-  top: 80px; /* header tem 80px com padding */
+  top: 80px;
   background: #111;
   border-bottom: 2px solid red;
   z-index: 1000;
@@ -73,11 +81,13 @@ nav button#carrinhoBtn:hover {
   justify-content: space-between;
   align-items: center;
 }
+
 .categorias-menu nav {
   display: flex;
   align-items: center;
   gap: 20px;
 }
+
 .categorias-menu nav a {
   color: white;
   margin: 0 5px;
@@ -85,9 +95,11 @@ nav button#carrinhoBtn:hover {
   font-weight: 600;
   transition: color 0.3s;
 }
+
 .categorias-menu nav a:hover {
   color: red;
 }
+
 #barraPesquisa {
   padding: 7px 12px;
   border-radius: 20px;
@@ -111,6 +123,7 @@ section.produtos {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
 }
+
 .card {
   background: #111;
   border: 1px solid #222;
@@ -121,25 +134,30 @@ section.produtos {
   position: relative;
   overflow: hidden;
 }
+
 .card:hover {
   transform: translateY(-5px);
   border-color: red;
   box-shadow: 0 0 15px red;
 }
+
 .card img {
   width: 100%;
   height: 180px;
   object-fit: cover;
   border-radius: 10px;
 }
+
 .card h3 {
   margin: 10px 0;
 }
+
 .card span {
   color: red;
   font-size: 1.2rem;
   font-weight: bold;
 }
+
 .card button.toggleDesc {
   margin: 8px 8px 8px 0;
   padding: 10px 20px;
@@ -151,9 +169,11 @@ section.produtos {
   cursor: pointer;
   transition: background 0.3s;
 }
+
 .card button.toggleDesc:hover {
   background: #666;
 }
+
 .card button.comprar {
   margin: 8px 0;
   padding: 10px 20px;
@@ -165,10 +185,12 @@ section.produtos {
   cursor: pointer;
   transition: background 0.3s;
 }
+
 .card button.comprar:hover {
   background: #ff3333;
   box-shadow: 0 0 10px red;
 }
+
 .descricao-box {
   background: #0d0d0d;
   border-top: 1px solid #222;
@@ -182,22 +204,26 @@ section.produtos {
 /* Carrinho */
 .carrinho {
   position: fixed;
-  top: 0; right: -400px;
-  width: 350px;
+  top: 0;
+  right: -400px;
+  width: 90%;
+  max-width: 350px;
   height: 100%;
   background: #111;
   border-left: 2px solid red;
   transition: 0.4s;
   padding: 20px;
-  padding-top: 60px; /* espaço para o botão fechar */
+  padding-top: 60px;
   overflow-y: auto;
   z-index: 1100;
   display: flex;
   flex-direction: column;
 }
+
 .carrinho.aberto {
   right: 0;
 }
+
 #fecharCarrinho {
   position: absolute;
   top: 15px;
@@ -210,9 +236,11 @@ section.produtos {
   transition: color 0.3s;
   z-index: 1200;
 }
+
 #fecharCarrinho:hover {
   color: #ff0000;
 }
+
 .carrinho h3 {
   color: red;
   text-align: center;
@@ -221,9 +249,11 @@ section.produtos {
   font-weight: bold;
   flex-shrink: 0;
 }
+
 #itensCarrinho {
   flex-grow: 1;
 }
+
 .item-carrinho {
   border-bottom: 1px solid #333;
   padding: 15px 0;
@@ -231,6 +261,7 @@ section.produtos {
   justify-content: space-between;
   align-items: center;
 }
+
 .item-carrinho .item-info {
   display: flex;
   gap: 10px;
@@ -239,14 +270,17 @@ section.produtos {
   color: #ccc;
   font-size: 0.95rem;
 }
+
 .item-quantidade {
   color: #ff6666;
   font-weight: 600;
 }
+
 .item-total {
   color: red;
   font-weight: bold;
 }
+
 .item-carrinho button.remover {
   background: transparent;
   border: none;
@@ -255,9 +289,11 @@ section.produtos {
   cursor: pointer;
   transition: color 0.3s;
 }
+
 .item-carrinho button.remover:hover {
   color: #ff0000;
 }
+
 button#finalizar {
   margin-top: auto;
   background: red;
@@ -269,6 +305,7 @@ button#finalizar {
   cursor: pointer;
   transition: background 0.3s;
 }
+
 button#finalizar:hover {
   background: #ff3333;
 }
@@ -283,38 +320,114 @@ footer {
   border-top: 2px solid red;
   color: #666;
 }
+
 footer p {
   margin: 10px 0;
 }
+
 footer a {
   color: red;
   text-decoration: none;
   font-weight: 600;
 }
+
 footer a:hover {
   text-decoration: underline;
 }
 
-/* Responsividade */
+/* ============================= */
+/* RESPONSIVIDADE */
+/* ============================= */
+
+/* Tablets e telas médias */
 @media screen and (max-width: 800px) {
   header {
     flex-direction: column;
-    gap: 10px;
-    padding: 20px 20px;
+    gap: 15px;
+    padding: 15px 20px;
+    text-align: center;
   }
+
+  .logo h1 {
+    font-size: 2rem;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .categorias-menu {
-    padding: 10px 20px;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
+    padding: 10px 20px;
   }
+
+  #barraPesquisa {
+    width: 80%;
+  }
+
   section.produtos {
-    padding: 20px 20px 60px 20px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
   }
+
+  .card img {
+    height: 160px;
+  }
+}
+
+/* Celulares e telas pequenas */
+@media screen and (max-width: 500px) {
+  header {
+    padding: 10px;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .logo h1 {
+    font-size: 1.6rem;
+  }
+
   nav a {
-    font-size: 1rem;
+    display: inline-block;
+    margin: 5px;
+    font-size: 0.9rem;
   }
+
   nav button#carrinhoBtn {
-    padding: 8px 16px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .categorias-menu nav {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  #barraPesquisa {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .banner {
+    max-height: 200px;
+  }
+
+  section.produtos {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  footer {
+    font-size: 0.85rem;
   }
 }
