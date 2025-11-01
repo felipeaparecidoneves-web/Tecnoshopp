@@ -45,7 +45,6 @@ document.querySelectorAll('.comprar').forEach(botao => {
     } else {
       carrinhoItens.push({ nome, preco, quantidade: 1 });
     }
-    alert(`Produto "${nome}" adicionado ao carrinho!`);
   });
 });
 
@@ -106,5 +105,6 @@ barraPesquisa.addEventListener('input', () => {
     }
   });
 });
+
 
 
